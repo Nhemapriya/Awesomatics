@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MATHS QUIZ </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<section>
+<h1> LET'S PLAY :) </h1>
+<div class ="centerDiv">
+	<div class="insertBox">
+		<div class="box1">
+			<input type="text" id ="num1">
+		</div>
+		<div class="box1">
+			<p>+</p>
+		</div>
+		<div class="box1">
+			<input type="text" id ="num2">
+		</div>
+	</div>
+
+	<div class ="middleBox">
+		<input type="text" id ="answer">
+	</div>
+
+
+	<div class="sentBox">
+		<button onclick="checkAnswer()"> Check Result </button>
+
+	</div>
+</div>
+</section>
+
+
+<script>
+
+let num1 = Math.floor(Math.random()*10+1);
+let num2 = Math.floor(Math.random()*10+1);
+
+document.getElementById('num1').value = num1;
+document.getElementById('num2').value = num2;
+
+let ans = num1 + num2;
+
+const checkAnswer = () => {
+	var res = document.getElementById('answer').value;
+
+	if(res == ans){
+		alert('Your answer is correct !!');
+	}
+	else{
+		alert('correct answer is '+ans+ ' Try again !');
+	}
+
+document.getElementById('answer').value = ""
+ num1 = Math.floor(Math.random()*10+1);
+ num2 = Math.floor(Math.random()*10+1);
+
+document.getElementById('num1').value = num1;
+document.getElementById('num2').value = num2;
+
+ ans = num1 + num2;
+
+}
+</script>
+</body>
+</html>
