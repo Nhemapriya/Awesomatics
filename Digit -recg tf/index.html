@@ -10,7 +10,7 @@
   <script src="draw.js"></script>
   <script src="process.js"></script>
   <script src="question.js"></script>
-  <script src="vendor/opencv.js"></script>
+  <script src="OpenCv/opencv.js"></script>
  
 </head>
 
@@ -18,9 +18,7 @@
 
   <div class='container'>
     <h1 id="title"> Math 'O' Mania </h1>
-    <h2 id='question'><span id='n1'>3</span> + <span id='n2'>2</span> = </h2>
-    <!-- TODO: Add a drawing canvas here -->
-
+    <h2 id='question'><span id='n1'>3</span> <span id="op"> + </span> <span id='n2'>2</span> = </h2>
     <canvas id="can" width="150" height="130">
 
     </canvas>
@@ -31,12 +29,8 @@
     <button id='checkAnswer' class='btn' value='Check'> Check </button>
   </div>
 </body>
-  <!-- TODO: Set up TF model and drawing logic-->
+  
   <script>
-   
-
-
-
     loading();
     prepareCanvas();
     nextQuestion();
@@ -47,7 +41,4 @@
       nextQuestion();
     });
   </script>
-
-
-
 </html>

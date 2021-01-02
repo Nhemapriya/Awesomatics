@@ -5,7 +5,7 @@ background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
 background-color: #242E6B;
-/* background-image: url('https://previews.123rf.com/images/etiamos/etiamos1206/etiamos120600140/14180773-background-made-of-papers-with-colorful-numbers.jpg'); */
+background-image: url('https://previews.123rf.com/images/etiamos/etiamos1206/etiamos120600140/14180773-background-made-of-papers-with-colorful-numbers.jpg');
 }
 
 
@@ -55,7 +55,15 @@ h1, h2{
   border: 5px solid white;
   
 }
-/* 
-#n1{
-  color: #000000;
-} */
+ #n1{
+  color: black;
+}  
+
+#n2 {
+  color: black;
+}
+
+
+#op {
+  color: black;
+}

@@ -41,7 +41,7 @@ function check()
             setTimeout(function() {
                 bgImages.pop();
                 document.body.style.backgroundImage = bgImages;
-            }, 1000);
+            }, 2000);
         }
     }
 }
