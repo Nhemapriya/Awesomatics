@@ -20,7 +20,7 @@ function prepareCanvas() {
     var isDraw = false;
 
     document.addEventListener('mousedown', function (event) {
-        console.log('Mouse press');
+        // console.log('Mouse press');
         isDraw = true;
         currentX = event.clientX - canvas.offsetLeft;
         currentY = event.clientY - canvas.offsetTop;
@@ -41,7 +41,7 @@ function prepareCanvas() {
 
     document.addEventListener('mouseup', function (event) {
         // console.log('clicked');
-        console.log('Mouse released');
+        // console.log('Mouse released');
         isDraw = false;
     });
 
@@ -51,7 +51,7 @@ function prepareCanvas() {
 
     // for touch events
     canvas.addEventListener('touchstart', function (event) {
-        console.log('Touch event');
+        // console.log('Touch event');
         isDraw = true;
         currentX = event.touches[0].clientX - canvas.offsetLeft;
         currentY = event.touches[0].clientY - canvas.offsetTop;
@@ -73,12 +73,6 @@ function prepareCanvas() {
             currentX = event.touches[0].clientX - canvas.offsetLeft;
             prevY = currentY;
             currentY = event.touches[0].clientY - canvas.offsetTop;
-            // steps => begin , set starting pt, move, end, finish 
-            // context.beginPath();
-            // context.moveTo(prevX, prevY);
-            // context.lineTo(currentX, currentY);
-            // context.closePath();
-            // context.stroke();
             drawing();
         } 
     });
@@ -99,6 +93,6 @@ function clear()
  currentY = 0;
   prevX = 0;
  prevY = 0; 
- console.log('cleared');
+//  console.log('cleared');
  context.fillRect(0,0, canvas.clientWidth, canvas.clientHeight)
 }
